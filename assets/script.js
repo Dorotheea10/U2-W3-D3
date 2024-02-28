@@ -1,9 +1,9 @@
 document.addEventListener("DOMContentLoaded", function () {
-  // Effettua una chiamata HTTP di tipo GET all'endpoint
+  //  chiamata HTTP di tipo GET all'endpoint
   fetch("https://striveschool-api.herokuapp.com/books")
     .then((response) => response.json())
     .then((data) => {
-      // Popola la pagina con i dati ottenuti
+      //  dati ottenuti
       displayBooks(data);
     })
     .catch((error) => console.error("Errore durante il recupero dei libri:", error));
